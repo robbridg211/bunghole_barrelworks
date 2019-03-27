@@ -1,0 +1,468 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+.container {
+    background-color: rgba(33, 33, 33, 0.692);
+    width: 100%;
+    overflow-x: hidden;
+}
+.mat-icon:hover {
+    border-radius: 50px;
+    background-color: #155783;
+    padding: 7.5px;
+}
+#main-menu img {
+    padding-top: 40px;
+}
+#main-menu {
+    background-color: rgba(0, 0, 0, 0.801);
+    z-index: 99;
+    display: inline-block;
+    position: fixed;
+    padding-top: 20px;
+    color: whitesmoke;
+}
+#main-menu .button-bar {
+    margin: 25px;
+}
+#main-menu .mat-button {
+    color: whitesmoke;
+    font-size: 18px;
+}
+#main-menu .mat-button:hover {
+    border-bottom: 5px solid #155783;
+    color: rgba(245, 245, 245, 0.755);
+}
+#main-menu .mat-button .fa-shopping-cart {
+    margin-bottom: 5px;
+}
+.mat-sidenav-content {
+    overflow-x: hidden;
+}
+.mat-drawer {
+    margin-top: 85px;
+    padding-top: 15px;
+}
+
+/* *********** END OF TOP MENU *************** */
+
+#sec-1 {
+    background-image: url(../assets/landing_photo.jpg);
+    background-repeat: no-repeat;
+    height: 120vh;
+    width: 100%;
+    background-size: cover; 
+}
+#sec-1 h1 {
+    padding: 200px 5% 105px ;
+    font-size: 44px;
+    text-shadow: 0 0 15px gray;
+    font-style: italic;
+}
+.sec1_content {
+    border-radius: 5px;
+    box-shadow: 0 0 15px gray;
+    width: 100%;
+    margin-right: 5%;
+    background-color: rgba(211, 211, 211, 0.384);
+}
+#sec-1 p {
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px gray;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.856);
+    width: 45%;
+    padding: 1%;
+    float: right;
+}
+
+/* ************ SECTION 2 ************ */
+
+#sec-2 {
+    background-color: rgba(0, 0, 0, 0.801);
+    color: whitesmoke;
+    height: 90vh;
+    width: 100%;
+}
+#sec2-img {
+    text-align: left;
+    display: inline-block;
+    padding: 4% 0 0 2%;
+    width: 40%;
+}
+#sec2-text {
+    display: inline-block;
+    text-shadow: 0 0 10px gray;
+    vertical-align: top;
+    padding: 15% 0;
+    width: 50%;
+}
+#sec2-text h1 {
+    text-align: right;
+    font-size: 36px;
+}
+#sec2-text p {
+    font-size: 18px;
+    font-style: italic;
+    text-align: right;
+}
+
+/* *********** CUSTOM SECTION ********** */
+
+#sec-custom {
+    height: 90vh;
+    background-color: lightgray;
+    color: whitesmoke;
+    display: inline-block;
+}
+#sec-custom img {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10% 5%;
+}
+.custom-text {
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    padding: 100px 0;
+}
+.custom-text h1 {
+    font-size: 36px;
+    padding: 10px;
+}
+.custom-text p {
+    font-size: 18px;
+}
+
+/* ********* LOGO SECTION ************** */
+
+.sec-logo-content {
+    height: 65vh;
+    background-color: #d2c8c1;
+    background-image: url(../assets/bandit_flag2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 15px gray;
+}
+
+
+/* *************** SECTION 3 ************** */
+
+#sec-3 {
+    background-color: rgba(0, 0, 0, 0.801);
+    height: 100vh;
+    width: 100%;
+}
+#sec-3 img {
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+}
+#sec-3 h1 {
+    font-size: 36px;
+    padding-top: 15%;
+    color: whitesmoke;
+    display: inline-block;
+    vertical-align: top;
+}
+#sec-3 h3 {
+    padding: 10px 0;
+}
+#sec-3 table {
+    font-size: 18px;
+    text-align: left;
+    color: whitesmoke;
+    border-color: whitesmoke;
+    border-collapse: collapse;
+    width: 90%;
+}
+.table-div {
+    margin-left: 5%;
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+#sec-3 tr, #sec-3 td {
+    padding: 15px 5px 15px 0px;
+    border-bottom: 4px solid whitesmoke;
+}
+
+/* *********** SECTION 5 ************ */
+
+#sec-contact img {
+    margin: 0 auto;
+    padding: 15% 0% 0 0;
+}
+#sec-contact {
+    height: 50vh;
+    width: 100%;
+    display: inline-block;
+    color: white;
+    cursor: default;
+}
+.split {
+    height: 55vh;
+    width: 50%;
+    position: inherit;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+.left {
+    left: 0;
+    background-color: aliceblue;
+    color: darkblue;
+    display: inline-block;
+    text-align: center;
+}
+.right {
+    right: 0;
+    background-color: darkslateblue;
+    display: inline-block;
+    text-align: center;
+    size: 18px;
+    color: aliceblue;
+}
+.split hr {
+    width: 33%;
+    margin: 0 auto;
+}
+.phone-box, .mail-box {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 20px;
+}
+.mail-box .far, .phone-box .fas {
+    padding: 15px;
+    color: aliceblue;
+}
+.phone-box .fas:hover, .mail-box .far:hover {
+    background-color: rgba(51, 40, 122, 0.863);
+    color: rgba(221, 218, 218, 0.726);
+    border-radius: 50px;
+}
+.location-box {
+    padding-top: 25px;
+}
+
+/* ********** FOOOOOOOOOOOOOOTER ********** */
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.856);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    padding-bottom: 10px;
+}
+.footer a {
+    color: white;
+    padding: 12.5px 40px;
+    display: inline-block;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #155783;
+}
+.footer h6 {
+    cursor: default;
+}
+
+
+/* ####################################### */
+/* ####################################### */
+/* ####################################### */
+
+        /* RESPONSIVE MOBILE DESIGN */
+
+/* ####################################### */
+/* ####################################### */
+/* ####################################### */
+
+@media only screen and (max-width: 768px) {
+#main-menu img {
+    height: 85px;
+}
+#main-menu .mat-button {
+    font-size: 10px;
+    padding: 0;
+}
+#main-menu #cart {
+    display: none;
+}
+#sec-contact {
+    padding-bottom: 70px;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+#main-menu .button-bar {
+    display: none;
+}
+#main-menu img {
+
+    height: 70px;
+}
+
+/* *********** END OF TOP MENU *************** */
+
+.router-outlet {
+    height: auto;
+}
+
+#sec-1 {
+    height: auto;
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0.801);
+}
+#sec-1 h1 {
+    padding: 48% 0%;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 0px;
+    box-shadow: 0 0 15px gray;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+#sec-1 p {
+   display: none;
+}
+.mat-toolbar-row {
+    height: 15px;
+}
+
+/* ************ SECTION 2 ************ */
+
+#sec-2 {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: whitesmoke;
+    width: 100%;
+}
+#sec2-img {
+    width: 100%;
+}
+#sec2-text {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+#sec2-text h1 {
+    font-size: 24px;
+    text-align: center;
+}
+#sec2-text p {
+display: none;
+}
+
+/* *********** CUSTOM SECTION ********** */
+#sec-custom {
+    height: auto;
+}
+#sec-custom img {
+    width: 80%;
+    margin: 0 auto;
+}
+.custom-text {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.custom-text h1 {
+    font-size: 24px;
+    padding: 0;
+}
+.custom-text p {
+    display: none;
+}
+
+/* ********* LOGO SECTION ************** */
+
+#sec-logo {
+    display: none;
+}
+
+/* *************** SECTION 3 ************** */
+#sec-3 {
+    height: auto;
+}
+#sec-3 h1 {
+    font-size: 24px;
+}
+#sec-3 table {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+#sec-3 tr, #sec-3 td {
+    padding: 5px 2px 5px 0px;
+    border-bottom: 2px solid whitesmoke;
+}
+
+/* *********** SECTION CONTACT ************ */
+
+#sec-contact img {
+    margin: 0 auto;
+    padding: 5% 0;
+}
+#sec-contact h1{
+    font-size: 24px;
+}
+#sec-contact p {
+    font-size: 12px;
+}
+#sec-contact {
+    height: auto;
+}
+.split {
+    height: auto;
+}
+.left {
+    display: none;
+}
+.right {
+    width: 100%;
+    size: 12px;
+}
+.location-box {
+    display: none;
+}
+
+/* ********** FOOOOOOOOOOOOOOTER ********** */
+
+.footer {
+    height: auto;
+    font-size: 10px;
+}
+.footer a {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 481px) and (min-width: 842px) {
+    .navbar #main-menu .mat-button {
+        display: none;
+    }
+}
+
+
+
+}

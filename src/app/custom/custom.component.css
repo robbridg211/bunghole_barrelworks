@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: lightsteelblue;
+    padding-top: 250px;
+}
+.announcement {
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+    font-size: 32px;
+    text-align: center;
+    background-color: darkmagenta;
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 15px gray;
+    font-style: italic;
+}
+.announcement i {
+    padding: 20px;
+    background-color: rgba(241, 241, 30, 0.85);
+    border-radius: 50px;
+}

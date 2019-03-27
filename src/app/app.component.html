@@ -1,21 +1,162 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container">
+  
+  <div class="top-menu">
+    <mat-toolbar id="main-menu">
+      <mat-toolbar-row>
+        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <a (click)="onLogo()" [routerLink]="['/']">
+          <img src="../assets/gray_big_logo.png" alt="Bandit K9 Home" height="120">
+        </a>
+        <span class="menu-spacer"></span>
+        <div class="button-bar" fxShow="true" fxHide.lt-md>
+          <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+          <a [routerLink]= "['/shop']" mat-button>STORE </a>|
+          <a [routerLink]= "['/custom']" mat-button>CUSTOMIZE </a>|
+          <a [routerLink]= "['/story']" mat-button>THIS IS BANDITK9 </a>|
+          <a id="cart" [routerLink]="['/cart']" mat-button><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  
+    <mat-sidenav-container fxFlexFill>
+      <mat-sidenav #sidenav>
+        <mat-nav-list>
+          <a (click)="sidenav.toggle()" [routerLink]="['']" mat-list-item><i class="fas fa-home">HOME</i></a>
+          <a (click)="sidenav.toggle()" [routerLink]= "['/shop']" mat-list-item>STORE</a>
+          <a (click)="sidenav.toggle()" [routerLink]= "['/custom']" mat-list-item>CUSTOMIZE</a>
+          <a (click)="sidenav.toggle()" [routerLink]= "['/story']" mat-list-item>THIS IS BANDITK9</a>
+          <a (click)="sidenav.toggle()" [routerLink]= "['/cart']" mat-list-item>CART<i class="fas fa-shopping-cart"> </i></a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content fxFlexFill>
+        <!-- WHERE ALLL CONTENT IS STORED -->
 
-<router-outlet></router-outlet>
+        <router-outlet (activate)="onActivate($event)"></router-outlet>
+
+        <section id="sec-1">
+          <div data-aos="fade-right">
+            <h1>Canine <br> Muzzles <br>Revolutionized<br><i class="fas fa-chevron-down" *ngIf="showArrow"></i></h1>
+            
+          </div>
+          <div class="sec1_content" data-aos="fade-down">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> 
+               Vivamus porttitor interdum sodales. Pellentesque habitant <br>
+               morbi tristique senectus et netus.</p>
+          </div>
+        </section>
+      
+        <section id="sec-2" >
+            <div id="sec2_content" data-aos="fade-up" data-aos-delay="0.5s">
+              <div id="sec2-img">
+                <img src="../assets/trans_muzzle3.png" width="100%">
+              </div>
+              <div id="sec2-text">
+                <h1>Performance Grade Design</h1>
+                <hr color="purple">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Vivamus porttitor interdum sodales. Pellentesque habitant
+                  morbi tristique senectus et netus et malesuada fames ac
+                  turpis egestas. Donec quis placerat sapien.</p>
+              </div>
+            </div>
+        </section>
+        
+        <section id="sec-custom">
+          <div data-aos="fade-down-left" data-aos-duration="2500">
+            <img src="../assets/blue_muzzle.png" width="40%">
+            <div class="custom-text" style="width:30%">
+                <h1>Completely Customizable</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor interdum sodales. Pellentesque habitantmorbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+              </div>
+            </div>
+          </section>
+          
+        <section id="sec-logo">
+          <div class="sec-logo-content" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300" width="100%" >
+          </div>
+        </section>
+          
+        <section id="sec-3">
+          <div data-aos="fade-up-right" data-aos-duration="2000">
+          <div class="table-div">
+            <h1>Hi-Tech Performance</h1>
+            <table>
+              <h3>Specifications</h3>
+                <tr>
+                  <td>Weight: </td>
+                  <td>13 ounces</td>
+                </tr>
+                <tr>
+                  <td>Dimensions: </td>
+                  <td>11in x 10in x 6in</td>
+                </tr>
+                <tr>
+                  <td>Material: </td>
+                  <td>Heavy Duty Plastic</td>
+                </tr>
+                <tr>
+                  <td>Custom Paint Type: </td>
+                  <td>Acrylic Latex</td>
+                </tr>
+                <tr>
+                  <td>Tension Rating: </td>
+                  <td>5,221psi</td>
+                </tr>
+                <tr>
+                  <td>Aeronautical Rating: </td>
+                  <td>128 Cubic in/sec</td>
+                </tr>
+              </table>
+            </div>
+            <img src="../assets/trans_muzzle2.png" width="40%">
+          </div>
+        </section>
+          
+          
+        <div id="sec-contact">
+          <div class="split left">
+            <img src="../assets/transparent_logo.png" alt="White Bandit Logo" width="100%">
+          </div>
+        
+          <div class="split right">
+            <h1>Contact Us</h1>
+            <hr>
+            <p>Monday - Friday</p>
+            <p>8:00AM - 5:00PM CT</p>
+            <div class="phone-box">
+              <h2> Call us </h2>
+              <a href="tel:+17083054451"><i class="fas fa-phone fa-3x"></i></a>
+            </div>
+            <div class="mail-box">
+              <h2> Email us </h2>
+              <a href="mailto:rob.bridgeman@gmail.com?"><i class="far fa-envelope fa-3x"></i></a>
+            </div>
+            <div class="location-box">
+              <h1>CORPORATE OFFICE</h1>
+              <p>201 S Bloomingdale Rd</p>
+              <p>Bloomingdale, IL 60108</p>
+              <p>555-555-5555</p>
+            </div>  
+          </div>
+        </div>
+      
+        <footer class="footer">
+          <a href="https://www.facebook.com/trebor.namegdirb" target="_blank"><i class="fab fa-facebook fa-2x"></i>
+            <p>Facebook</p></a>
+          <a href="https://www.linkedin.com/in/robert-bridgeman/" target="_blank"><i class="fab fa-linkedin fa-2x"></i>
+            <p>LinkedIn</p></a>
+          <a href="https://www.instagram.com/thebanditk9/" target="_blank"><i class="fab fa-instagram fa-2x"></i>
+            <p>Instagram</p></a>
+          <a href="snapchat.com/add/bridgemania" target="_blank"><i class="fab fa-snapchat fa-2x"></i>
+            <p>SnapChat</p></a>
+      
+          <h6>CopyRight © 2019 BanditK9 Co. All Rights Reserved</h6>
+        </footer>
+            
+
+      </mat-sidenav-content>
+
+    </mat-sidenav-container>
+  
