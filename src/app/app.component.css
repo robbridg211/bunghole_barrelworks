@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-
 }
 .container {
     background-color: rgba(33, 33, 33, 0.692);
@@ -41,9 +40,11 @@
 .mat-sidenav-content {
     overflow-x: hidden;
 }
+
 .mat-drawer {
     margin-top: 85px;
     padding-top: 15px;
+    position: fixed;
 }
 
 /* *********** END OF TOP MENU *************** */
@@ -195,42 +196,33 @@
 /* *********** SECTION 5 ************ */
 
 #sec-contact img {
-    margin: 0 auto;
-    padding: 15% 0% 0 0;
+    padding: 10% 0% 0 0;
 }
 #sec-contact {
-    height: 50vh;
     width: 100%;
     display: inline-block;
     color: white;
     cursor: default;
 }
 .split {
-    height: 55vh;
     width: 50%;
-    position: inherit;
-    z-index: 1;
-    top: 0;
+    height: 50vh;
     overflow-x: hidden;
-    padding-top: 20px;
   }
 .left {
-    left: 0;
     background-color: aliceblue;
-    color: darkblue;
     display: inline-block;
-    text-align: center;
 }
 .right {
-    right: 0;
-    background-color: darkslateblue;
+    margin-top: 5px;
+    background-color: #155783;
     display: inline-block;
     text-align: center;
     size: 18px;
     color: aliceblue;
 }
 .split hr {
-    width: 33%;
+    width: 40%;
     margin: 0 auto;
 }
 .phone-box, .mail-box {
@@ -244,7 +236,7 @@
     color: aliceblue;
 }
 .phone-box .fas:hover, .mail-box .far:hover {
-    background-color: rgba(51, 40, 122, 0.863);
+    background-color: #0c456b;
     color: rgba(221, 218, 218, 0.726);
     border-radius: 50px;
 }
@@ -293,21 +285,26 @@
 }
 #main-menu .mat-button {
     font-size: 10px;
-    padding: 0;
 }
 #main-menu #cart {
     display: none;
 }
 #sec-contact {
-    padding-bottom: 70px;
+    height: auto;
 }
-footer {
-    position: fixed;
-    left: 0;
+.footer {
     bottom: 0;
     text-align: center;
 }
-
+.footer a {
+    padding: 10px;
+}
+.right {
+    size: 14px;
+}
+.right h1 {
+    font-size: 24px;
+}
 }
 
 
@@ -331,15 +328,15 @@ footer {
     height: auto;
     background-size: contain;
     background-color: rgba(0, 0, 0, 0.801);
+    background-repeat: round;
 }
 #sec-1 h1 {
-    padding: 48% 0%;
+    padding: 100px 5% 85px;
     text-align: center;
     font-size: 28px;
     border-radius: 0px;
     box-shadow: 0 0 15px gray;
     color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.856);
 }
 #sec-1 p {
    display: none;
@@ -452,9 +449,6 @@ display: none;
 .footer {
     height: auto;
     font-size: 10px;
-}
-.footer a {
-    padding: 10px;
 }
 
 @media only screen and (max-width: 481px) and (min-width: 842px) {

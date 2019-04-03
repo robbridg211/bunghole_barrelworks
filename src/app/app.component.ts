@@ -16,7 +16,7 @@ export class AppComponent {
       easing: 'ease-out-sine',
       duration: 1500
     });
-    var showArrow: boolean = false;
+
 
     
   }

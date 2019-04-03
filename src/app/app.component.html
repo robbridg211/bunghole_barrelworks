@@ -23,11 +23,11 @@
     <mat-sidenav-container fxFlexFill>
       <mat-sidenav #sidenav>
         <mat-nav-list>
-          <a (click)="sidenav.toggle()" [routerLink]="['']" mat-list-item><i class="fas fa-home">HOME</i></a>
+          <a (click)="sidenav.toggle();onLogo()" [routerLink]= "['/']" mat-list-item><i class="fas fa-home">HOME</i></a>
           <a (click)="sidenav.toggle()" [routerLink]= "['/shop']" mat-list-item>STORE</a>
           <a (click)="sidenav.toggle()" [routerLink]= "['/custom']" mat-list-item>CUSTOMIZE</a>
           <a (click)="sidenav.toggle()" [routerLink]= "['/story']" mat-list-item>THIS IS BANDITK9</a>
-          <a (click)="sidenav.toggle()" [routerLink]= "['/cart']" mat-list-item>CART<i class="fas fa-shopping-cart"> </i></a>
+          <a (click)="sidenav.toggle()" [routerLink]= "['/cart']" mat-list-item><i class="fas fa-shopping-cart">CART</i></a>
         </mat-nav-list>
       </mat-sidenav>
       <mat-sidenav-content fxFlexFill>
@@ -117,7 +117,7 @@
           
         <div id="sec-contact">
           <div class="split left">
-            <img src="../assets/transparent_logo.png" alt="White Bandit Logo" width="100%">
+            <img src="../assets/transparent_logo.png" alt="White Bandit Logo" width="80%">
           </div>
         
           <div class="split right">
@@ -142,7 +142,7 @@
           </div>
         </div>
       
-        <footer class="footer">
+        <div class="footer">
           <a href="https://www.facebook.com/trebor.namegdirb" target="_blank"><i class="fab fa-facebook fa-2x"></i>
             <p>Facebook</p></a>
           <a href="https://www.linkedin.com/in/robert-bridgeman/" target="_blank"><i class="fab fa-linkedin fa-2x"></i>
@@ -153,7 +153,7 @@
             <p>SnapChat</p></a>
       
           <h6>CopyRight © 2019 BanditK9 Co. All Rights Reserved</h6>
-        </footer>
+          </div>
             
 
       </mat-sidenav-content>
