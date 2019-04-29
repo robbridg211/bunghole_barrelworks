@@ -48,18 +48,18 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import { ShopComponent } from './shop/shop.component';
-import { CustomComponent } from './custom/custom.component';
 import { StoryComponent } from './story/story.component';
 import { CartComponent } from './cart/cart.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ShopComponent,
-    CustomComponent,
     StoryComponent,
-    CartComponent
+    CartComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

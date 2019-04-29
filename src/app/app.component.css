@@ -3,35 +3,54 @@
     padding: 0px;
 }
 .container {
-    background-color: rgba(33, 33, 33, 0.692);
     width: 100%;
     overflow-x: hidden;
 }
+#top-logo {
+    padding-left: 25px;
+}
+#top-logo img {
+    display: inline-block;
+    margin-top: 15px;
+}
+#top-logo h1 {
+    vertical-align: top;
+    font-family: 'IM Fell English', 'Open Sans';
+    font-size: 44px;
+    line-height: .8;
+    padding-top: 50px;
+    margin-left: -118px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bolder;
+    color: steelblue;
+    text-shadow: 1px 1px 6px whitesmoke;
+}
 .mat-icon:hover {
     border-radius: 50px;
-    background-color: #155783;
+    background-color: steelblue;
     padding: 7.5px;
 }
-#main-menu img {
-    padding-top: 40px;
-}
 #main-menu {
+    vertical-align: middle;
     background-color: rgba(0, 0, 0, 0.801);
     z-index: 99;
     display: inline-block;
     position: fixed;
-    padding-top: 20px;
-    color: whitesmoke;
+    padding-top: 40px;
+    color: white;
 }
 #main-menu .button-bar {
     margin: 25px;
+    padding: 0 15px;
 }
 #main-menu .mat-button {
-    color: whitesmoke;
-    font-size: 18px;
+    color: white;
+    font-size: 16px;
+    font-family: 'IM Fell English';
 }
 #main-menu .mat-button:hover {
-    border-bottom: 5px solid #155783;
+    border-bottom: 3px solid steelblue;
     color: rgba(245, 245, 245, 0.755);
 }
 #main-menu .mat-button .fa-shopping-cart {
@@ -40,233 +59,384 @@
 .mat-sidenav-content {
     overflow-x: hidden;
 }
-
 .mat-drawer {
-    margin-top: 85px;
-    padding-top: 15px;
+    top: 15%;
+    padding: 15px;
     position: fixed;
+    background-color: rgba(245, 245, 245, 0.719);
 }
+
 
 /* *********** END OF TOP MENU *************** */
 
 #sec-1 {
-    background-image: url(../assets/landing_photo.jpg);
-    background-repeat: no-repeat;
-    height: 120vh;
-    width: 100%;
-    background-size: cover; 
+    padding-top: 170px;
+    height: 100vh;
+    font-family: 'Open Sans';
+    text-align: center;
+    background-image: url(../assets/background.png);
+    background-size: 100%;
+    background-repeat: round;
 }
-#sec-1 h1 {
-    padding: 200px 5% 105px ;
-    font-size: 44px;
-    text-shadow: 0 0 15px gray;
-    font-style: italic;
-}
-.sec1_content {
-    border-radius: 5px;
-    box-shadow: 0 0 15px gray;
-    width: 100%;
-    margin-right: 5%;
-    background-color: rgba(211, 211, 211, 0.384);
-}
-#sec-1 p {
-    font-size: 18px;
-    border-radius: 5px;
-    box-shadow: 0 0 15px gray;
+
+#sec-1 a {
+    text-decoration: none;
     color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.856);
-    width: 45%;
-    padding: 1%;
-    float: right;
+    z-index: 2;
+    position: relative;
+    background: #dfc5c533;
+    padding: 20px 45px;
+    border: 3px solid;
+    border-radius: 5px;
+    font-size: 24px;
+    bottom: 450px;
 }
+#sec-1 a:hover {
+    box-shadow: 0 0 10px whitesmoke;
+    font-weight: bolder;
+    border: 5px solid;
+    text-shadow: 2px 2px 5px black;
+    color: steelblue;
+}
+.main-carousel {
+    width: 66%;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.701);
+    filter: drop-shadow(8px 8px 10px gray);
+}
+.carousel-cell {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+}
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+}
+.carousel-nav .carousel-cell {
+    height: 80px;
+    width: 100px;
+}
+.carousel-nav {
+    padding: 50px;
+}
+#slider-1, #slider-2, #slider-3, #slider-4, #slider-5 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
 
 /* ************ SECTION 2 ************ */
 
 #sec-2 {
     background-color: rgba(0, 0, 0, 0.801);
     color: whitesmoke;
-    height: 90vh;
-    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 80px;
 }
-#sec2-img {
-    text-align: left;
-    display: inline-block;
-    padding: 4% 0 0 2%;
-    width: 40%;
-}
+
 #sec2-text {
     display: inline-block;
     text-shadow: 0 0 10px gray;
-    vertical-align: top;
-    padding: 15% 0;
-    width: 50%;
+    padding-top: 50px;
 }
-#sec2-text h1 {
-    text-align: right;
+#sec2-text h3 {
     font-size: 36px;
+    font-family: "IM Fell English";
 }
-#sec2-text p {
+#sec2-text hr {
+    margin-bottom:15px;
+}
+#sec2-text a {
+    color: white;
+    margin-top: 25px;
     font-size: 18px;
-    font-style: italic;
-    text-align: right;
+    text-decoration: none;
+    padding: 7.5px;
+    font-family: 'Open Sans';
+}
+#sec2-text a:hover {
+    box-shadow: 0 0 5px whitesmoke;
+    border: 2px solid;
+    text-shadow: 2px 2px 5px black;
+    color: steelblue;
 }
 
-/* *********** CUSTOM SECTION ********** */
+/* FEATURED PRODUCTS SECTION */
 
-#sec-custom {
-    height: 90vh;
-    background-color: lightgray;
-    color: whitesmoke;
-    display: inline-block;
+
+/* ********** IN NEED OF SOME CLEANING UP!!!! */
+
+
+.product-container {
+    padding-top: 25px;
+    font-size: 0;
+    display: flex;
+    justify-content: space-evenly;
 }
-#sec-custom img {
-    display: inline-block;
+.product-container .box {
+    border: 5px solid steelblue;
+    display: inline-flex;
+    box-sizing: border-box;
+    min-height: 1px;
     vertical-align: top;
-    padding: 10% 5%;
+    width: 25%;
 }
-.custom-text {
-    display: inline-block;
-    color: black;
-    font-weight: bold;
-    width: 50%;
+figure {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    margin: 0;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+figure .image-table {
+    max-width: 100%;
+    width: 100%;
+    display: table;
+    table-layout: auto;
+}
+figure .image-cell {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
-    padding: 100px 0;
 }
-.custom-text h1 {
-    font-size: 36px;
-    padding: 10px;
+/* Keeps image inside border box on hover */
+figure .image-cell a.product-image {
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+    background-position: center center;
 }
-.custom-text p {
+figure a.product-image.view-alt, .collection figure a.product-image.view-alt {
+    background-position: -1000px -1000px;
+    background-repeat: no-repeat;
+}
+/* ******************************** */
+
+figcaption a.product-title {
+    display: block;
+    font-family: "Open Sans";
+    color: steelblue;
+    font-size: 1.125em;
+    text-decoration: none;
+    text-align: center;
+}
+figcaption a.product-title:hover {
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px dimgrey;
+}
+
+/* end of necessary clean up for featured products section */
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.product-image img {
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.product-image img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.3);
+}
+figcaption {
+    margin-top: 10px;
+    line-height: 1.3;
     font-size: 18px;
 }
+
+
 
 /* ********* LOGO SECTION ************** */
 
-.sec-logo-content {
-    height: 65vh;
-    background-color: #d2c8c1;
-    background-image: url(../assets/bandit_flag2.png);
+#sec-container {
+    height: auto;
+}
+#sec-logo-content {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: stretch;
+}
+#sec-logo-left {
+    width: 33%;
+    background-image: url(../assets/spec-left.jpeg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 0 0 15px gray;
+    display: flex;
+}
+#sec-logo-left, #sec-logo-right, #sec-logo-mid {
+    justify-content: center;
+}
+#sec-logo-left a, #sec-logo-right a {
+    margin: 50%;
+    font-weight: 300;
+    padding: 5px 35px;
+    color: white;
+    font-size: 32px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid #ffffff;
+}
+#sec-logo-left a:hover, #sec-logo-right a:hover {
+    background-color: rgba(0,0,0,0.7);
+    border: 2px solid rgba(255, 222, 173, 0.767);
+    color: rgba(255, 222, 173, 0.767);
+}
+#sec-logo-mid {
+    width: 34%;
+    background-color: steelblue;
+    display: flex;
+}
+#sec-logo-mid h2:hover {
+    color: rgba(255, 222, 173, 0.767);
+}
+#sec-logo-mid h2 {
+    margin: 40% auto;
+    font-size: 36px;
+    color: white;
+    font-family: 'IM Fell English';
+}
+#sec-logo-mid a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#sec-logo-right {
+    width: 33%;
+    background-image: url(../assets/spec-right.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
 }
 
 
-/* *************** SECTION 3 ************** */
+/* ********* SECTION 3 - about us ************** */
 
 #sec-3 {
-    background-color: rgba(0, 0, 0, 0.801);
-    height: 100vh;
+    background-color: rgb(13, 25, 35);
     width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    height: 50vh;
+    padding: 70px 30px;
+    align-items: stretch;
 }
-#sec-3 img {
-    display: inline-block;
-    text-align: right;
-    vertical-align: middle;
+.about-sec-img {
+    background-image: url(../assets/about_us.jpeg);
+    width: 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-#sec-3 h1 {
-    font-size: 36px;
-    padding-top: 15%;
-    color: whitesmoke;
-    display: inline-block;
-    vertical-align: top;
+.about-sec-text {
+    width: 45%;
+    padding: 60px 30px 0 30px;
 }
-#sec-3 h3 {
+.about-sec-text h1, .about-sec-text p {
+    font-family: 'Open Sans';
+    color: #646569;
+    margin: 15px 0;
+}
+.about-sec-text h2 {
+    font-family: 'IM Fell English';
+    color: steelblue;
     padding: 10px 0;
 }
-#sec-3 table {
-    font-size: 18px;
-    text-align: left;
+.about-sec-text a {
+    font-family: 'Open Sans';
+    color: steelblue;
+    text-decoration: none;
+    letter-spacing: .1em;
+    font-size: 12px;
+    padding: 8px 16px 6px 16px;
+    border: 1px solid steelblue;
+}
+.about-sec-text a:hover {
     color: whitesmoke;
-    border-color: whitesmoke;
-    border-collapse: collapse;
-    width: 90%;
-}
-.table-div {
-    margin-left: 5%;
-    width: 50%;
-    display: inline-block;
-    vertical-align: middle;
-}
-#sec-3 tr, #sec-3 td {
-    padding: 15px 5px 15px 0px;
-    border-bottom: 4px solid whitesmoke;
+    border: 1px solid #646569;
 }
 
-/* *********** SECTION 5 ************ */
 
-#sec-contact img {
-    padding: 10% 0% 0 0;
-}
-#sec-contact {
-    width: 100%;
-    display: inline-block;
-    color: white;
-    cursor: default;
-}
-.split {
-    width: 50%;
-    height: 50vh;
-    overflow-x: hidden;
-  }
-.left {
-    background-color: aliceblue;
-    display: inline-block;
-}
-.right {
-    margin-top: 5px;
-    background-color: #155783;
-    display: inline-block;
-    text-align: center;
-    size: 18px;
-    color: aliceblue;
-}
-.split hr {
-    width: 40%;
-    margin: 0 auto;
-}
-.phone-box, .mail-box {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 20px;
-}
-.mail-box .far, .phone-box .fas {
+/* ********** CONTENT ABOVE FOOOTER ********** */
+
+#above-footer-content {
+    background-image: url(../assets/af-background.jpeg);
+    background-size: cover;
+    background-repeat: round;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding: 15px;
-    color: aliceblue;
 }
-.phone-box .fas:hover, .mail-box .far:hover {
-    background-color: #0c456b;
-    color: rgba(221, 218, 218, 0.726);
-    border-radius: 50px;
+#af-logo, #af-links, #af-contact {
+    opacity: 1; 
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Open Sans';
 }
-.location-box {
-    padding-top: 25px;
+
+#af-links a {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    min-width: 100%;
+    text-decoration: none;
+    color: steelblue;
+    text-shadow: 2px 2px 10px whitesmoke;
 }
+#af-contact h1, #af-contact h3{
+    color: steelblue;
+    font-family: "Impact";
+    font-size: 28px;
+    text-shadow: 2px 2px 10px whitesmoke;
+}
+#af-contact h1 {
+    font-size: 32px;
+}
+#af-contact a {
+    color: black;
+}
+#af-contact i {
+    color: black;
+    padding: 10px;
+}
+#af-links a:hover {
+    text-shadow: 5px 5px 10px steelblue;
+}
+#af-contact i:hover {
+    text-shadow: 5px 5px 10px whitesmoke;
+}
+
 
 /* ********** FOOOOOOOOOOOOOOTER ********** */
 
 .footer {
     background-color: rgba(0, 0, 0, 0.856);
     width: 100%;
-    height: auto;
     text-align: center;
     font-size: 14px;
-    color: white;
-    padding-bottom: 10px;
+    color: whitesmoke;
+    padding: 15px;
 }
-.footer a {
-    color: white;
-    padding: 12.5px 40px;
-    display: inline-block;
-    text-decoration: none;
-}
-.footer a:hover {
-    color: #155783;
-}
-.footer h6 {
-    cursor: default;
-}
+
 
 
 /* ####################################### */
@@ -280,14 +450,22 @@
 /* ####################################### */
 
 @media only screen and (max-width: 768px) {
+
 #main-menu img {
-    height: 85px;
+    height: 110px;
+}
+#top-logo h1 {
+    padding-top: 36px;
+    font-size: 34px;
 }
 #main-menu .mat-button {
     font-size: 10px;
 }
 #main-menu #cart {
     display: none;
+}
+.mat-drawer {
+    top: 16%;
 }
 #sec-contact {
     height: auto;
@@ -299,23 +477,65 @@
 .footer a {
     padding: 10px;
 }
-.right {
-    size: 14px;
+#sec-3 {
+    height: auto;
 }
-.right h1 {
-    font-size: 24px;
+.about-sec-text {
+    padding: 0px 30px 0 30px;
 }
+#af-logo {
+    display: none;
+}
+#af-contact h1 {
+    font-size: 28px;
+}
+#af-contact h3 {
+    font-size: 21px;
+}
+#sec-container {
+    height: auto;
+}
+#sec-logo-content {
+    flex-flow: column wrap;
+}
+.sec-logo-box {
+    border: blue;
+}
+#sec-logo-left, #sec-logo-mid, #sec-logo-right {
+    width: 100%;
 }
 
+#sec-logo-left a, #sec-logo-right a, #sec-logo-mid h2 {
+    margin: 25%;
+}
+
+}
 
 @media only screen and (max-width: 480px) {
 
+#main-menu {
+    padding-top: 55px;
+}
 #main-menu .button-bar {
     display: none;
 }
 #main-menu img {
-
-    height: 70px;
+    height: 80px;
+}
+#main-menu h1 {
+    padding-top: 0;
+}
+#top-logo {
+    margin-top: -15px;
+}
+#top-logo h1 {
+    margin-left: -95px;
+}
+#top-logo img {
+    margin-top: 0px;
+}
+.mat-drawer {
+    top: 8%;
 }
 
 /* *********** END OF TOP MENU *************** */
@@ -323,132 +543,66 @@
 .router-outlet {
     height: auto;
 }
-
+.main-carousel {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+}
 #sec-1 {
-    height: auto;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0.801);
-    background-repeat: round;
+    padding-top: 70px;
+    height: 78vh;
 }
-#sec-1 h1 {
-    padding: 100px 5% 85px;
-    text-align: center;
-    font-size: 28px;
-    border-radius: 0px;
-    box-shadow: 0 0 15px gray;
-    color: whitesmoke;
-}
-#sec-1 p {
-   display: none;
+#sec-1 a {
+    bottom: 300px;
 }
 .mat-toolbar-row {
     height: 15px;
 }
-
-/* ************ SECTION 2 ************ */
-
-#sec-2 {
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.801);
-    color: whitesmoke;
-    width: 100%;
+.product-container .box {
+    border: 2px solid steelblue;
 }
-#sec2-img {
-    width: 100%;
+#sec-logo-mid h2 {
+    margin: 0;
 }
-#sec2-text {
-    padding: 0;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-}
-#sec2-text h1 {
-    font-size: 24px;
-    text-align: center;
-}
-#sec2-text p {
-display: none;
-}
-
-/* *********** CUSTOM SECTION ********** */
-#sec-custom {
-    height: auto;
-}
-#sec-custom img {
-    width: 80%;
-    margin: 0 auto;
-}
-.custom-text {
-    display: block;
-    padding: 0;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-}
-.custom-text h1 {
-    font-size: 24px;
-    padding: 0;
-}
-.custom-text p {
-    display: none;
-}
-
-/* ********* LOGO SECTION ************** */
-
-#sec-logo {
-    display: none;
-}
-
-/* *************** SECTION 3 ************** */
 #sec-3 {
-    height: auto;
+    background-image: url(../assets/about_us.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-flow: nowrap;
+    height:  auto;
+    width: auto;
+    padding: 100px 10px;
 }
-#sec-3 h1 {
-    font-size: 24px;
-}
-#sec-3 table {
-    font-size: 12px;
-    margin-bottom: 10px;
-}
-#sec-3 tr, #sec-3 td {
-    padding: 5px 2px 5px 0px;
-    border-bottom: 2px solid whitesmoke;
-}
-
-/* *********** SECTION CONTACT ************ */
-
-#sec-contact img {
-    margin: 0 auto;
-    padding: 5% 0;
-}
-#sec-contact h1{
-    font-size: 24px;
-}
-#sec-contact p {
-    font-size: 12px;
-}
-#sec-contact {
-    height: auto;
-}
-.split {
-    height: auto;
-}
-.left {
+.about-sec-img {
     display: none;
 }
-.right {
+.about-sec-text {
+    padding: 0;
     width: 100%;
-    size: 12px;
+    text-align: center;
 }
-.location-box {
+.about-sec-text h2, .about-sec-text a {
+    color: white;
+    text-align: center;
+}
+.about-sec-text p, .about-sec-text h1 {
+    margin: 0;
     display: none;
 }
+.about-sec-text a {
+    font-size: 16px;
+}
 
-/* ********** FOOOOOOOOOOOOOOTER ********** */
-
-.footer {
-    height: auto;
-    font-size: 10px;
+@media screen and (max-width: 800px) {
+    .product-container .box {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 16px;
+        min-height: 1px;
+        vertical-align: top;
+        width: 50%;
+}
 }
 
 @media only screen and (max-width: 481px) and (min-width: 842px) {

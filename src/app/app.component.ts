@@ -17,7 +17,7 @@ export class AppComponent {
       duration: 1500
     });
 
-
+    
     
   }
 
@@ -38,6 +38,9 @@ export class AppComponent {
   onLogo() {
     this.onActivate('$click');
 }
+
+
+
 
 
 

@@ -1,20 +1,20 @@
 <div class="container">
-  
   <div class="top-menu">
     <mat-toolbar id="main-menu">
       <mat-toolbar-row>
         <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
           <mat-icon>menu</mat-icon>
         </button>
-        <a (click)="onLogo()" [routerLink]="['/']">
-          <img src="../assets/gray_big_logo.png" alt="Bandit K9 Home" height="120">
+        <a id="top-logo" (click)="onLogo()" [routerLink]="['/']">
+          <img src="../assets/header_img.png" alt="Bunghole Barrels Home" height="150px">
+          <h1>BUNGHOLE <br> BARRELWORKS</h1>
         </a>
         <span class="menu-spacer"></span>
         <div class="button-bar" fxShow="true" fxHide.lt-md>
           <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-          <a [routerLink]= "['/shop']" mat-button>STORE </a>|
-          <a [routerLink]= "['/custom']" mat-button>CUSTOMIZE </a>|
-          <a [routerLink]= "['/story']" mat-button>THIS IS BANDITK9 </a>|
+          <a [routerLink]= "['/shop']" mat-button>SHOP </a>
+          <a [routerLink]= "['/story']" mat-button>ABOUT </a>
+          <a [routerLink]= "['/contact']" mat-button>CONTACT </a>
           <a id="cart" [routerLink]="['/cart']" mat-button><i class="fas fa-shopping-cart"></i></a>
         </div>
       </mat-toolbar-row>
@@ -24,9 +24,9 @@
       <mat-sidenav #sidenav>
         <mat-nav-list>
           <a (click)="sidenav.toggle();onLogo()" [routerLink]= "['/']" mat-list-item><i class="fas fa-home">HOME</i></a>
-          <a (click)="sidenav.toggle()" [routerLink]= "['/shop']" mat-list-item>STORE</a>
-          <a (click)="sidenav.toggle()" [routerLink]= "['/custom']" mat-list-item>CUSTOMIZE</a>
-          <a (click)="sidenav.toggle()" [routerLink]= "['/story']" mat-list-item>THIS IS BANDITK9</a>
+          <a (click)="sidenav.toggle()" [routerLink]= "['/shop']" mat-list-item>SHOP</a>
+          <a (click)="sidenav.toggle()" [routerLink]= "['/story']" mat-list-item>ABOUT</a>
+          <a (click)="sidenav.toggle()" [routerLink]= "['/contact']" mat-list-item>CONTACT</a>
           <a (click)="sidenav.toggle()" [routerLink]= "['/cart']" mat-list-item><i class="fas fa-shopping-cart">CART</i></a>
         </mat-nav-list>
       </mat-sidenav>
@@ -36,123 +36,147 @@
         <router-outlet (activate)="onActivate($event)"></router-outlet>
 
         <section id="sec-1">
-          <div data-aos="fade-right">
-            <h1>Canine <br> Muzzles <br>Revolutionized<br><i class="fas fa-chevron-down" *ngIf="showArrow"></i></h1>
-            
-          </div>
-          <div class="sec1_content" data-aos="fade-down">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> 
-               Vivamus porttitor interdum sodales. Pellentesque habitant <br>
-               morbi tristique senectus et netus.</p>
+          <div data-aos="fade-up">
+            <div id="sec1_content">
+              <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": true, "autoPlay": true}'>
+                <div class="carousel-cell" >
+                  <img id="slider-4" src="../assets/slide_4.JPG">
+                </div>
+                <div class="carousel-cell">
+                  <img id="slider-1" src="../assets/slide_5.jpeg">
+                </div>
+                <div class="carousel-cell">
+                  <img id="slider-2" src="../assets/slide_2.png">
+                </div>
+                <div class="carousel-cell">  
+                <img id="slider-3" src="../assets/slide_3.JPG">
+                </div>
+                <div class="carousel-cell">
+                  <img id="slider-5" src="../assets/slide_1.png">
+                </div>
+              </div>
+              <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".main-carousel", "contain": true, "pageDots": false, "prevNextButtons": false }'>
+                  <div class="carousel-cell" >
+                    <img id="slider-4" src="../assets/slide_4.JPG">
+                    </div>
+                    <div class="carousel-cell">
+                      <img id="slider-3" src="../assets/slide_5.jpeg">
+                    </div>
+                    <div class="carousel-cell">
+                      <img id="slider-2" src="../assets/slide_2.png">
+                    </div>
+                    <div class="carousel-cell">
+                      <img id="slider-1" src="../assets/slide_3.JPG">
+                    </div>
+                    <div class="carousel-cell">
+                      <img id="slider-5" src="../assets/slide_1.png">
+                    </div>
+                </div>
+
+            </div>
+            <a [routerLink]="['/shop']">Shop Now</a>
           </div>
         </section>
       
         <section id="sec-2" >
-            <div id="sec2_content" data-aos="fade-up" data-aos-delay="0.5s">
-              <div id="sec2-img">
-                <img src="../assets/trans_muzzle3.png" width="100%">
-              </div>
+            <div id="sec2_content" data-aos="fade-down">
               <div id="sec2-text">
-                <h1>Performance Grade Design</h1>
-                <hr color="purple">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Vivamus porttitor interdum sodales. Pellentesque habitant
-                  morbi tristique senectus et netus et malesuada fames ac
-                  turpis egestas. Donec quis placerat sapien.</p>
+                <h3>Featured Products</h3>
+                <hr color="steelblue">
+                <a [routerLink]="['/shop']">Shop all products</a>
               </div>
             </div>
+            <div class="product-container">
+              <div class="box product">
+                <figure>
+                  <div class="image-table" >
+                    <div class="image-cell">
+                      <a href="#" class="product-image view-alt"><img src="../assets/spec_3.jpeg" alt="Barrel mini-bar"></a>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <a href="#" class="product-title">Barrel Mini-Bar</a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="box product">
+                <figure>
+                  <div class="image-table">
+                    <div class="image-cell">
+                      <a href="#" class="product-image view-alt"><img src="../assets/stave-flight-new.png" alt="Barrel stave flight"></a>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <a href="#" class="product-title">Barrel Stave Flight</a>
+                  </figcaption>
+                </figure>
+              </div>
+           
+            </div>
         </section>
-        
-        <section id="sec-custom">
-          <div data-aos="fade-down-left" data-aos-duration="2500">
-            <img src="../assets/blue_muzzle.png" width="40%">
-            <div class="custom-text" style="width:30%">
-                <h1>Completely Customizable</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor interdum sodales. Pellentesque habitantmorbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+
+
+        <section id="sec-container">
+            <div id="sec-logo-content">
+              <div id="sec-logo-left" class="sec-logo-box">
+                <a [routerLink]="['/shop']">Explore</a>
+              </div>
+              <div id="sec-logo-mid" class="sec-logo-box">
+                  <a (click)="onLogo()" [routerLink]="['/']">
+                  <h2>Bunghole Barrelworks</h2>
+                  </a>
+                </div>
+              <div id="sec-logo-right" class="sec-logo-box">
+                <a [routerLink]="['/shop']">Shop</a>
               </div>
             </div>
           </section>
           
-        <section id="sec-logo">
-          <div class="sec-logo-content" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300" width="100%" >
-          </div>
-        </section>
-          
         <section id="sec-3">
-          <div data-aos="fade-up-right" data-aos-duration="2000">
-          <div class="table-div">
-            <h1>Hi-Tech Performance</h1>
-            <table>
-              <h3>Specifications</h3>
-                <tr>
-                  <td>Weight: </td>
-                  <td>13 ounces</td>
-                </tr>
-                <tr>
-                  <td>Dimensions: </td>
-                  <td>11in x 10in x 6in</td>
-                </tr>
-                <tr>
-                  <td>Material: </td>
-                  <td>Heavy Duty Plastic</td>
-                </tr>
-                <tr>
-                  <td>Custom Paint Type: </td>
-                  <td>Acrylic Latex</td>
-                </tr>
-                <tr>
-                  <td>Tension Rating: </td>
-                  <td>5,221psi</td>
-                </tr>
-                <tr>
-                  <td>Aeronautical Rating: </td>
-                  <td>128 Cubic in/sec</td>
-                </tr>
-              </table>
-            </div>
-            <img src="../assets/trans_muzzle2.png" width="40%">
+          <div class="about-sec-img">
+            
+          </div>
+          <div class="about-sec-text">
+            <h1>About Us</h1>
+            <h2>THE BUNGHOLE STORY</h2>
+            <p>Bunghole Barrelworks is an authentic American-made brand, based in the Chicagoland area, celebrating a rustic barrel version of the mini-bar guaranteeing hand-made quality.</p>
+            <a [routerLink]="['/story']">Read Our Story</a>
           </div>
         </section>
           
-          
-        <div id="sec-contact">
-          <div class="split left">
-            <img src="../assets/transparent_logo.png" alt="White Bandit Logo" width="80%">
+        <section id="above-footer-content">
+          <div id="af-logo">
+            <img src="../assets/af-logo.png" height="250px">
           </div>
-        
-          <div class="split right">
-            <h1>Contact Us</h1>
-            <hr>
-            <p>Monday - Friday</p>
-            <p>8:00AM - 5:00PM CT</p>
-            <div class="phone-box">
-              <h2> Call us </h2>
-              <a href="tel:+17083054451"><i class="fas fa-phone fa-3x"></i></a>
-            </div>
-            <div class="mail-box">
-              <h2> Email us </h2>
-              <a href="mailto:rob.bridgeman@gmail.com?"><i class="far fa-envelope fa-3x"></i></a>
-            </div>
-            <div class="location-box">
-              <h1>CORPORATE OFFICE</h1>
-              <p>201 S Bloomingdale Rd</p>
-              <p>Bloomingdale, IL 60108</p>
-              <p>555-555-5555</p>
-            </div>  
+          <div id="af-links">
+            <h2>LINKS</h2>
+            <a [routerLink]= "['/shop']">Shop </a>
+            <a [routerLink]= "['/story']">About Us </a>
+            <a [routerLink]= "['/contact']">Shipping </a>
+            <a href="#">Terms </a>
+            <a href="#">Privacy </a>
+            <a href="#">Returns </a>
           </div>
-        </div>
-      
-        <div class="footer">
-          <a href="https://www.facebook.com/trebor.namegdirb" target="_blank"><i class="fab fa-facebook fa-2x"></i>
-            <p>Facebook</p></a>
-          <a href="https://www.linkedin.com/in/robert-bridgeman/" target="_blank"><i class="fab fa-linkedin fa-2x"></i>
-            <p>LinkedIn</p></a>
-          <a href="https://www.instagram.com/thebanditk9/" target="_blank"><i class="fab fa-instagram fa-2x"></i>
-            <p>Instagram</p></a>
-          <a href="snapchat.com/add/bridgemania" target="_blank"><i class="fab fa-snapchat fa-2x"></i>
-            <p>SnapChat</p></a>
-      
-          <h6>CopyRight © 2019 BanditK9 Co. All Rights Reserved</h6>
+          <div id="af-contact">
+            <h2>GET IN TOUCH</h2>
+            <p>Contact Us</p>
+            <a href="mailto:info@bungholebarrelworks.com?">info@bungholebarrelworks.com</a><br>
+
+            <a href="https://www.facebook.com/trebor.namegdirb" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/robert-bridgeman/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.instagram.com/thebanditk9/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="snapchat.com/add/bridgemania" target="_blank"><i class="fab fa-snapchat fa-2x"></i></a>
+
+            <h1>Bunghole Barrelworks</h1>
+            <h3>PO BOX 1234</h3>
+            <h3>HUNTLEY, IL 60142</h3>
+
+          </div>
+        </section>
+
+          <div class="footer">
+            <h6>© 2019 Bunghole Barrelworks Co. | Site by Robert Bridgeman</h6>
           </div>
             
 
