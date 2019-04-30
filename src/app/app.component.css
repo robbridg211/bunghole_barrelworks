@@ -66,19 +66,17 @@
     background-color: rgba(245, 245, 245, 0.719);
 }
 
-
 /* *********** END OF TOP MENU *************** */
 
 #sec-1 {
     padding-top: 170px;
-    height: 100vh;
+    height: 118vh;
     font-family: 'Open Sans';
     text-align: center;
     background-image: url(../assets/background.png);
     background-size: 100%;
     background-repeat: round;
 }
-
 #sec-1 a {
     text-decoration: none;
     color: whitesmoke;
@@ -109,7 +107,7 @@
 .carousel-cell {
     object-fit: cover;
     width: 100%;
-    height: 500px;
+    height: 550px;
     border-radius: 5px;
 }
 .carousel-cell:before {
@@ -550,7 +548,7 @@ figcaption {
 }
 #sec-1 {
     padding-top: 70px;
-    height: 78vh;
+    height: 85vh;
 }
 #sec-1 a {
     bottom: 300px;

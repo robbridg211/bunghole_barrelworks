@@ -2,34 +2,191 @@
     margin: 0px;
     padding: 0px;
 }
-
 .container {
     width: 100%;
-    height: 100vh;
-    background-color: lightsteelblue;
-    padding-top: 250px;
+    height: auto;
+    background-color: #b0c4de99;
 }
-.announcement {
-    width: 50%;
-    margin: 0 auto;
-    padding: 50px;
-    font-size: 32px;
+#story-sec {
+    width: 100%;
+    padding: 150px 0 100px 0;
     text-align: center;
-    background-color: darkslategray;
-    color: whitesmoke;
-    border-radius: 10px;
-    box-shadow: 0 0 15px gray;
+    font-family: "IM Fell English";
+}
+#story-sec h1 {
+    padding: 25px 0;
+}
+#story-sec-text {
+    margin: 0 12.5px 0 0;
+    width: 40%;
+    color: steelblue;
+    vertical-align: top;
+    display: inline-flex;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Open Sans";
+}
+#story-sec-img {
+    margin: 0 0 0 12.5px;
+    display: inline-flex;
+    width: 40%;
+    background-image: url(./images/story-sec-img.jpeg);
+    box-shadow: 0 0 5px 8px white inset;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+#story-sec-mid {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+#story-sec-mid-img {
+    margin: 25px;
+    background-image: url(./images/barrel-top-new.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 25%;
+    display: inline-flex;
+}
+#story-sec-mid-text {
+    padding-top: 55px;
+    width: 50%;
+    display: inline-flex;
+    vertical-align: top;
+}
+blockquote {
+    color: white;
+    font-family: "Open Sans";
+    letter-spacing: .1em;
+    margin: 1em 0 1em 2em;
+    padding-left: 1em;
+    border-left: 6px solid steelblue;
     font-style: italic;
 }
-.announcement i {
-    padding: 20px;
-    background-color: rgba(241, 241, 30, 0.85);
-    border-radius: 50px;
+#story-sec-last {
+    background-color: #b0c4de99;
+    width: 100%;
+    height: 80vh;
+    color: black;
+
+    font-family: "TradeGothicLT-CondEighteen", Arial, sans-serif;
+    text-align: center;
+}
+#story-sec-last h3 {
+    color: steelblue;
+    font-size: 24px;
+    padding: 25px 0;
+}
+#story-sec-last p {
+    margin: 0 auto;
+    width: 67%;
+    letter-spacing: .1em;
+}
+.owner-pics-container {
+    margin: 25px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#owner-pic-1 {
+    background-image: url(./images/owner-pic-1.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+    height: 225px;
+    width: 75%;
+    display: inline-flex;
+}
+#owner-pic-2 {
+    background-image: url(./images/af-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 225px;
+    width: 75%;
+    display: inline-flex;
+}
+#owner-pic-3 {
+    background-image: url(./images/owner-pic-2.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+    height: 225px;
+    width: 75%;
+    display: inline-flex;
+}
+.owner-pics-container p {
+    padding-top: 225px;
+    font-family: 'Libre Franklin', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(100,101,105,0.6);
+    margin-top: 9px;
+    
 }
 
+
+/* ####################################### */
+/* ####################################### */
+/* ####################################### */
+
+        /* RESPONSIVE MOBILE DESIGN */
+
+/* ####################################### */
+/* ####################################### */
+/* ####################################### */
+
+@media only screen and (max-width: 768px) {
+
+
+
+
+
+
+
+}
+
+
 @media only screen and (max-width: 480px) {
-    .container {
-        height: auto;
-        padding: 20% 0 5% 0;
-    }
+
+#story-sec {
+    padding: 70px 0 100px 0;
+    height: auto;
+}
+#story-sec-img {
+    display: none;
+}
+#story-sec-text {
+    width: 90%;
+}
+#story-sec-mid-img {
+    height: 96px;
+}
+#story-sec-mid-text {
+    padding: 0;
+    width: 100%;
+    padding-bottom: 25px;
+}
+blockquote {
+    text-align: left;
+}
+#owner-pic-2 {
+    display: none;
+}
+#story-sec-last {
+    padding-bottom: 150px;
+}
+
+
+
+
+
+
+
+
 }
