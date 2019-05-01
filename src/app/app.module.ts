@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'; // <-- import FormsModule.
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // <-- import FormsModule.
 
 import { HttpService } from './http.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -77,6 +77,11 @@ import { ContactComponent } from './contact/contact.component';
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import * as AOS from 'aos';
-import { MAT_PAGINATOR_INTL_PROVIDER } from '@angular/material';
+import { HttpService } from './http.service';
+
 
 
 @Component({
@@ -10,6 +11,10 @@ import { MAT_PAGINATOR_INTL_PROVIDER } from '@angular/material';
 })
 
 export class AppComponent {
+
+  constructor(private _httpService: HttpService) {
+
+  }
 
   ngOnInit() {
     AOS.init( {

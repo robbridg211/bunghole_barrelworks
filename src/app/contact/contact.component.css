@@ -2,34 +2,108 @@
     margin: 0px;
     padding: 0px;
 }
-
 .container {
     width: 100%;
-    height: 100vh;
-    background-color: lightsteelblue;
-    padding-top: 250px;
+    padding-bottom: 75px;
+    height: auto;
+    padding-top: 150px;
+    text-align: center;
+    background-image: url(./images/contact-background-1.png);
+    background-size: round;
+    background-repeat: no-repeat;
 }
-.announcement {
+.container h1 {
+    font-size: 40px;
+    text-shadow: 5px 5px 8px ghostwhite;
+    font-family: "IM Fell English";
+    padding-bottom: 15px;
+}
+.mat-card p {
+    padding: 7.5px;
+    color: steelblue;
+    font-family: "Open Sans";
+}
+.mat-card {
+    background-color: ghostwhite;
+    width: 55%;
+    margin: 0 auto;
+}
+.mat-raised-button {
+    padding: 0 80px;
+    background-color: steelblue;
+    color: white;
+}
+h2 {
+    font-family: "IM Fell English";
+    padding: 40px 0 25px 0;
+}
+.social-media {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
     width: 50%;
     margin: 0 auto;
-    padding: 50px;
-    font-size: 32px;
-    text-align: center;
-    background-color: darkslateblue;
-    color: whitesmoke;
-    border-radius: 10px;
-    box-shadow: 0 0 15px gray;
-    font-style: italic;
 }
-.announcement i {
-    padding: 20px;
-    background-color: rgba(241, 241, 30, 0.85);
-    border-radius: 50px;
+.social-media a {
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+}
+.social-media a:hover {
+    color: steelblue;
+    text-shadow: 2px 2px 8px ghostwhite;
+    font-weight: bolder;
 }
 
-@media only screen and (max-width: 480px) {
-    .container {
-        height: auto;
-        padding: 20% 0 5% 0;
-    }
+.submission-complete {
+    height: auto;
+    background-image: linear-gradient(steelblue, ghostwhite);
+    color: ghostwhite;
+    border: 2px none;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+.submission-complete h2 {
+    font-family: "IM Fell English";
+}
+.submission-complete h3 {
+    color: black;
+    padding-bottom: 15px;
+}
+.submission-complete .social-media {
+    justify-content: space-between;
+}
+.submission-complete .social-media a {
+    color: black;
+}
+.submission-complete .social-media a:hover {
+    color: black;
+    text-shadow: 2px 2px 8px ghostwhite;
+    font-weight: bolder;
+}
+
+
+
+/* ####################################### */
+/* ####################################### */
+/* ####################################### */
+
+        /* RESPONSIVE MOBILE DESIGN */
+
+/* ####################################### */
+/* ####################################### */
+/* ####################################### */
+
+@media only screen and (max-width: 768px) {
+
+.social-media .fa-3x {
+    font-size: 2em;
+}
+.submission-complete .social-media .fa-3x {
+    font-size: 1em;
+}
+
+
+
 }

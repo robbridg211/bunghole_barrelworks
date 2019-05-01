@@ -6,5 +6,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HttpService {
 
-  constructor() { }
+  constructor(private _http: HttpClient) { }
+
+
+  sendEmail(url, data) {
+    console.log("From Service: " , data)
+    return this._http.post(url, data);
+  }
+
 }
+
