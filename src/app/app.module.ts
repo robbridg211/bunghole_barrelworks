@@ -59,7 +59,7 @@ import { ContactComponent } from './contact/contact.component';
     ShopComponent,
     StoryComponent,
     CartComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

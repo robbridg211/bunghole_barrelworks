@@ -66,6 +66,7 @@ h2 {
 }
 .submission-complete h2 {
     font-family: "IM Fell English";
+    text-shadow: 2px 2px 12px black;
 }
 .submission-complete h3 {
     color: black;
